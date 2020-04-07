@@ -1,0 +1,88 @@
+.footer {
+  padding: 55px 0;
+}
+
+.footer .partners {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .button-submit {
+  display: block;
+  width: 220px;
+  height: 60px;
+  text-align: center;
+  margin: 50px auto;
+  border: none;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 5px 1px #ccc;
+          box-shadow: 0 2px 5px 1px #ccc;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+.footer .button-submit:hover {
+  -webkit-box-shadow: 0 0 5px 0 #ccc;
+          box-shadow: 0 0 5px 0 #ccc;
+  background-color: #fbfbfb;
+}
+
+.footer .down-footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .down-footer .social {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .down-footer .social a {
+  display: block;
+  width: 52px;
+  height: 52px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background-color: #d3d3d3;
+  margin-left: 15px;
+  text-align: center;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+.footer .down-footer .social a:hover {
+  background-color: #ff6e47;
+}
+
+.footer .down-footer .social a .fab {
+  margin-top: 16px;
+  color: #fff;
+  font-size: 21px;
+}

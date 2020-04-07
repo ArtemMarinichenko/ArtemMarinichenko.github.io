@@ -1,0 +1,46 @@
+//	шрифты 
+@import "fonts"
+
+//	общие настройки
+@import 'settings'
+
+//	блок header
+@import 'blocks/header'
+
+//	блок process
+@import 'blocks/process'
+
+//	блок works
+@import 'blocks/works'
+
+//	блок services
+@import 'blocks/services'
+
+//	блок team
+@import 'blocks/team.sass'
+
+//	блок comments
+@import 'blocks/clients.sass'
+
+//	блок footer
+@import 'blocks/footer.sass'
+
+
+//	стилизация плагина mmenu
+html.mm-wrapper_opened
+	overflow-y: scroll
+.mm-navbar
+	border: none
+.mm-wrapper_opening .mm-menu_fx-listitems-slide .mm-panel_opened .mm-listitem
+	a
+    	outline: none !important
+	&:hover
+		background: linear-gradient(to right, transparent, #D4D4D4)
+.mm-listitem_selected
+	background: linear-gradient(to right, transparent, #D4D4D4) !important
+
+.mm-listitem_selected>.mm-listitem__text
+	background: transparent
+	
+//	блок медиазапросов
+@import 'media.sass'

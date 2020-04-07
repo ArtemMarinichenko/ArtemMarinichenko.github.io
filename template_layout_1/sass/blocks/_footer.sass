@@ -1,0 +1,63 @@
+.footer
+	padding: 55px 0
+	.partners
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+	.button-submit
+		display: block
+		width: 220px
+		height: 60px
+		text-align: center
+		margin: 50px auto
+		+bold
+		border: none
+		border-radius: 50px
+		background-color: #fff
+		box-shadow: 0 2px 5px 1px #ccc
+		transition: all .2s
+		&:hover
+			box-shadow: 0 0 5px 0 #ccc
+			
+			background-color: #fbfbfb
+	.down-footer
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: center
+		.social
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			a
+				display: block
+				width: 52px
+				height: 52px
+				border-radius: 100%
+				background-color: #d3d3d3
+				margin-left: 15px
+				text-align: center
+				transition: all .2s
+				&:first-child
+					margin-left: 0
+				&:hover
+					background-color: #ff6e47
+					box-shadow: 0 0 15px 5px #ccc
+				.fab	
+					margin-top: 16px
+					color: #fff
+					font-size: 21px
+		.copy
+			margin-left: 25px
+			p
+				+regular
+
