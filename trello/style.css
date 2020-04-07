@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////   TRELLO   ////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.trello {
+  background: url("img/trello-bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.wrap-bg {
+  background-color: rgba(20, 20, 20, 0.3);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.trello-board {
+  display: flex;
+  color: #5a4c4c;
+}
+
+.container-fluid {
+  max-width: 1780px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 50px;
+  overflow: auto;
+  height: 100%;
+}
+
+.column {
+  height: fit-content;
+}
+
+.column,
+.add-col {
+  width: 280px;
+  border-radius: 7px;
+  padding: 15px;
+  background-color: rgba(218, 212, 212);
+  box-shadow: 0 5px 10px -2px #6f6868;
+  cursor: pointer;
+}
+
+.column + .column {
+  margin-left: 20px;
+}
+
+.col-header {
+  font-weight: bold;
+  min-height: 30px;
+}
+
+.task {
+  padding: 15px;
+  border-radius: 7px;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 1px 3px -1px #6f6868;
+  width: 250px;
+  transition: all 0.2s;
+}
+
+.select {
+  opacity: 0.5;
+  border: 2px dashed #ccc;
+}
+
+.task.dragged {
+  opacity: 0;
+}
+
+.task:hover {
+  background-color: #ebe9f5;
+}
+
+.task + .task {
+  margin-top: 15px;
+}
+
+.add-task {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.add-task:hover {
+  font-weight: bold;
+}
+
+.add-col {
+  height: 43px;
+  min-width: 250px;
+  font-weight: bold;
+  margin-left: 20px;
+  background-color: rgba(218, 212, 212, 0.4);
+}
+
+.dell {
+  position: absolute;
+  left: 80px;
+  bottom: 80px;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.dell img {
+  width: 100%;
+  height: auto;
+}
+
+.carpet {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.wrap-basket {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  width: 1010px;
+  height: 600px;
+  box-shadow: 0 15px 25px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.basket {
+  display: none;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 100%;
+  overflow-y: auto;
+  padding: 15px 10px 0 20px;
+  background-color: #fff;
+  z-index: 300;
+  border: 40px solid;
+  border-image-source: linear-gradient(#ccc, transparent);
+  border-image-slice: 1;
+  border-bottom: 20px solid;
+}
+
+.block {
+  display: block;
+}
+
+.delete-all {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.anime {
+  animation: spring 0.5s;
+}
+
+@keyframes spring {
+  0 {
+    letter-spacing: 0;
+  }
+  20% {
+    letter-spacing: -2px;
+    font-size: 18px;
+  }
+  40% {
+    letter-spacing: 3px;
+    font-size: 22px;
+  }
+  60% {
+    letter-spacing: -1.5px;
+    font-size: 19px;
+  }
+  80% {
+    letter-spacing: 1px;
+    font-size: 21px;
+  }
+  100% {
+    letter-spacing: 0;
+  }
+}
+
+.close-mod {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.close-mod::after {
+  content: "";
+  width: 5px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #fff;
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  transform: rotate(45deg);
+  transition: all 0.7s;
+}
+.close-mod::before {
+  content: "";
+  width: 5px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #fff;
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  transform: rotate(-45deg);
+  transition: all 0.7s;
+}
+
+.close-mod:hover::after {
+  transform: rotate(405deg);
+  background-color: red;
+  height: 37px;
+}
+.close-mod:hover::before {
+  transform: rotate(315deg);
+  background-color: red;
+  height: 37px;
+}
