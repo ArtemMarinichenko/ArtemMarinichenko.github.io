@@ -27,6 +27,9 @@ h1 {
   height: 100%;
 }
 
+.containert {
+  max-width: 1200px;
+
 .taskManager {
   width: 100%;
   padding-top: 50px;
