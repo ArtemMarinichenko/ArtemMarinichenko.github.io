@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>taskManager</title>
+    <link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="table-wrap">
+        <div class="table-bg">
+            <div class="container">
+                <div class="taskManager">
+                    <form class="add-task-block">
+                        <input type="text" class="taskInp" placeholder="Задания...">
+                        <button class="btn">Добавить</button>
+                    </form> 
+                    <div class="wrap-task">
+
+                        <div class="task-board" >
+                            <div class="board-name">
+                                <p class="listName">Запланированые:</p>
+                                <span class="sumNew"></span>
+                            </div> 
+                            <div class="task-list dropzone"  id="new"></div>  
+                        </div>                                                         
+                        <div class="task-board">
+                            <div class="board-name">
+                                <p class="listName">Текущие:</p>
+                                <span class="sumAct"></span>
+                            </div> 
+                            <div class="task-list dropzone"  id="actual"></div>
+                        </div>      
+                        <div class="task-board">
+                            <div class="board-name">
+                                <p class="listName">Выполненые:</p>
+                                <span class="sumDone"></span>
+                            </div> 
+                            <div class="task-list dropzone"  id="done"></div>
+                        </div>
+                    </div>                         
+                </div>
+            </div> 
+        </div>          
+    </div>
+    
+    
+    
+
+
+    <script src="js/todo.js"></script>    
+</body>
+</html>
